@@ -15,20 +15,22 @@
             color: white;
             height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
             text-align: center;
         }
 
         h1 {
-            font-size: 3em;
-            margin-bottom: 0;
+            font-size: 3.5em;
+            margin: 0;
+            font-weight: bold;
         }
 
         h2 {
-            font-size: 1.4em;
+            font-size: 1.5em;
             font-weight: normal;
+            margin-top: 10px;
         }
 
         .buttons {
@@ -57,6 +59,19 @@
             font-size: 1em;
             width: 100%;
             text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            .buttons a {
+                padding: 12px 18px;
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
