@@ -12,6 +12,7 @@
       background-size: cover;
       height: 100vh;
       overflow: hidden;
+      position: relative;
     }
 
     .botoes-mila {
@@ -46,24 +47,14 @@
       transform: scale(1.05);
     }
 
+    /* AJUSTE PARA MOBILE */
     @media (max-width: 768px) {
       .botoes-mila {
-        bottom: 40px;
-        right: 50%;
-        transform: translateX(50%);
+        position: absolute;
+        bottom: 8%;
+        left: 50%;
+        transform: translateX(-50%);
         flex-direction: column;
         align-items: center;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <div class="botoes-mila">
-    <button class="botao-mila" onclick="alert('Iniciando conversa...')">🔍 Iniciar conversa</button>
-    <button class="botao-mila" onclick="alert('Nova tarefa acionada')">📝 Nova tarefa</button>
-    <button class="botao-mila" onclick="window.open('https://wa.me/5511954326479', '_blank')">💬 Whatsapp</button>
-  </div>
-
-</body>
-</html>
+        width: 80%;
+        max-width: 300px;
