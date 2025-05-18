@@ -1,0 +1,8 @@
+{
+  "description": "Assistente oficial de atendimento inteligente da Social Milhas",
+  "background_color": "#ffffff",
+  "name": "Mila-Oficial",
+  "theme_color": "#0078d4",
+  "short_name": "Mila",
+  "id": "com.socialmilhas.mila"
+}
