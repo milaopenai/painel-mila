@@ -4,8 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MILA - Painel Oficial</title>
+
   <!-- REFERÊNCIA AO MANIFESTO -->
-  <link rel="manifest" href="/painel-mila/manifest.json">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="mila-icon-512.png" type="image/png" />
 
   <style>
     body {
@@ -50,7 +52,6 @@
       transform: scale(1.05);
     }
 
-    /* AJUSTE PARA MOBILE */
     @media (max-width: 768px) {
       .botoes-mila {
         position: absolute;
@@ -59,4 +60,23 @@
         transform: translateX(-50%);
         flex-direction: column;
         align-items: center;
-        width:
+        width: 80%;
+        max-width: 300px;
+      }
+
+      .botao-mila {
+        width: 100%;
+        justify-content: center;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="botoes-mila">
+    <button class="botao-mila" onclick="alert('Iniciando conversa...')">🔍 Iniciar conversa</button>
+    <button class="botao-mila" onclick="alert('Nova tarefa acionada')">📝 Nova tarefa</button>
+    <button class="botao-mila" onclick="window.open('https://wa.me/5511954326479', '_blank')">💬 Whatsapp</button>
+  </div>
+</body>
+</html>
