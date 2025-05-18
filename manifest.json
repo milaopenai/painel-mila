@@ -1,18 +1,14 @@
-{
-  "name": "Mila - Painel Oficial",
-  "short_name": "MILA",
-  "id": "com.socialmilhas.mila",
-  "description": "Assistente oficial de atendimento inteligente da Social Milhas",
-  "start_url": "/painel-mila/",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#0078d4",
-  "icons": [
-    {
-      "src": "/painel-mila/mila-icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
-  ]
-}
+"icons": [
+  {
+    "src": "/painel-mila/mila-icon-512.png",
+    "sizes": "512x512",
+    "type": "image/png",
+    "purpose": "any"
+  },
+  {
+    "src": "/painel-mila/mila-icon-512.png",
+    "sizes": "512x512",
+    "type": "image/png",
+    "purpose": "maskable"
+  }
+]
