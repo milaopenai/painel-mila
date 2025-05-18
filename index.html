@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,19 +7,17 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-      color: white;
-      background-image: url('atendimento%20mila%20openai.png');
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://milaopenai.github.io/painel-mila/atendimento%20mila.png') no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+      height: 100vh;
+      overflow: hidden;
     }
 
     .botoes-mila {
       position: fixed;
-      top: 120px;
-      right: 40px;
+      top: 130px;
+      right: 30px;
       display: flex;
       flex-direction: column;
       gap: 15px;
@@ -28,43 +25,45 @@
     }
 
     .botao-mila {
-      padding: 12px 24px;
+      padding: 12px 20px;
       background-color: #ffc107;
       color: #000;
       font-weight: bold;
       border: none;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       cursor: pointer;
-      font-size: 16px;
-      min-width: 200px;
-      text-align: left;
+      font-size: 15px;
+      min-width: 190px;
       display: flex;
       align-items: center;
       gap: 10px;
+      transition: all 0.3s ease;
     }
 
     .botao-mila:hover {
       background-color: #ff9800;
+      transform: scale(1.05);
     }
 
     @media (max-width: 768px) {
       .botoes-mila {
+        bottom: 40px;
         top: auto;
-        bottom: 30px;
         right: 50%;
         transform: translateX(50%);
-        flex-direction: column;
         align-items: center;
       }
     }
   </style>
 </head>
 <body>
+
   <div class="botoes-mila">
-    <button class="botao-mila">🔍 Iniciar conversa</button>
-    <button class="botao-mila">📝 Nova tarefa</button>
-    <button class="botao-mila">💬 Whatsapp</button>
+    <button class="botao-mila" onclick="alert('Iniciando conversa...')">🔍 Iniciar conversa</button>
+    <button class="botao-mila" onclick="alert('Nova tarefa acionada')">📝 Nova tarefa</button>
+    <button class="botao-mila" onclick="window.open('https://wa.me/5511954326479', '_blank')">💬 Whatsapp</button>
   </div>
+
 </body>
 </html>
