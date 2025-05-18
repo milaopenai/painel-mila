@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MILA - Painel Oficial</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: white;
+      background-image: url('atendimento%20mila%20openai.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .botoes-mila {
+      position: fixed;
+      top: 120px;
+      right: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 9999;
+    }
+
+    .botao-mila {
+      padding: 12px 24px;
+      background-color: #ffc107;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      cursor: pointer;
+      font-size: 16px;
+      min-width: 200px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .botao-mila:hover {
+      background-color: #ff9800;
+    }
+
+    @media (max-width: 768px) {
+      .botoes-mila {
+        top: auto;
+        bottom: 30px;
+        right: 50%;
+        transform: translateX(50%);
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="botoes-mila">
+    <button class="botao-mila">🔍 Iniciar conversa</button>
+    <button class="botao-mila">📝 Nova tarefa</button>
+    <button class="botao-mila">💬 Whatsapp</button>
+  </div>
+</body>
+</html>
